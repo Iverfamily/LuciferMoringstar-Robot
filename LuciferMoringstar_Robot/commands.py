@@ -44,7 +44,7 @@ async def start(bot: lucifermoringstar_robot, update):
     if not await db.is_user_exist(update.from_user.id):
         await db.add_user(update.from_user.id)
 
-    if update.text.startswith("/start muhammedrk"):
+    if update.text.startswith("/start kristyan"):
         if AUTH_CHANNEL:
             invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
             try:
@@ -56,13 +56,13 @@ async def start(bot: lucifermoringstar_robot, update):
                 mrk, file_id = update.text.split("-mo-tech-group-")
                 FORCES = ["https://telegra.ph/file/b2acb2586995d0e107760.jpg"]
                 invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
-                pr0fess0r_99 = [[ InlineKeyboardButton("🔰 𝙹𝙾𝙸𝙽 𝙼𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 🔰", url=invite_link.invite_link) ],
+                moviesclubowne = [[ InlineKeyboardButton("🔰 𝙹𝙾𝙸𝙽 𝙼𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 🔰", url=invite_link.invite_link) ],
                                 [ InlineKeyboardButton("🔄 𝚃𝚁𝚈 𝙰𝙶𝙰𝙸𝙽 🔄", callback_data=f"luciferPM#{file_id}") ]]
-                pr0fess0r_99 = InlineKeyboardMarkup(pr0fess0r_99)
+                moviesclubowne = InlineKeyboardMarkup(moviesclubowne)
                 await update.reply_photo(photo=random.choice(FORCES), caption=f"""<i><b>𝙷𝙴𝙻𝙻𝙾 {update.from_user.mention}. \n 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 <a href="{invite_link.invite_link}"> 𝙽𝙾𝚃 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴𝙳</a> 𝚃𝙾 <a href="{invite_link.invite_link}">𝙼𝚈 𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻</a>.𝚂𝙾 𝚈𝙾𝚄 𝙳𝙾 𝙽𝙾𝚃 𝙶𝙴𝚃 𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙾𝙽 𝙱𝙾𝚃 𝙿𝙼 𝙾𝚁 𝙶𝚁𝙾𝚄𝙿 (𝙵𝙸𝙻𝚃𝙴𝚁)</i></b>""", reply_markup=pr0fess0r_99)                
                 return
         try:
-            mrk, file_id = update.text.split("-mo-tech-group-")
+            mrk, file_id = update.text.split("-moviesclub77-")
             file_details_pr0fess0r99 = await get_file_details(file_id)
             for mrk in file_details_pr0fess0r99:
                 title = mrk.file_name
@@ -74,14 +74,14 @@ async def start(bot: lucifermoringstar_robot, update):
     if len(update.command) ==2 and update.command[1] in ["subscribe"]:
         FORCES = ["https://telegra.ph/file/b2acb2586995d0e107760.jpg"]
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
-        pr0fess0r_99 = [[ InlineKeyboardButton("🔔 SUBSCRIBE 🔔", url=invite_link.invite_link) ]]
-        pr0fess0r_99 = InlineKeyboardMarkup(pr0fess0r_99)
+        moviesclubowne = [[ InlineKeyboardButton("🔔 Hey 🔔", url=invite_link.invite_link) ]]
+        moviesclubowne = InlineKeyboardMarkup(moviesclubowne)
         await update.reply_photo(photo=random.choice(FORCES), caption=f"""<i><b>𝙷𝙴𝙻𝙻𝙾 {update.from_user.mention}. \n 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 <a href="{invite_link.invite_link}"> 𝙽𝙾𝚃 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴𝙳</a> 𝚃𝙾 <a href="{invite_link.invite_link}">𝙼𝚈 𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻</a>.𝚂𝙾 𝚈𝙾𝚄 𝙳𝙾 𝙽𝙾𝚃 𝙶𝙴𝚃 𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙾𝙽 𝙱𝙾𝚃 𝙿𝙼, 𝚅𝙸𝙰 𝙰𝙽𝙳 𝙶𝚁𝙾𝚄𝙿 (𝙵𝙸𝙻𝚃𝙴𝚁)</i></b>""", reply_markup=pr0fess0r_99)
         return
 
     if len(update.command) != 2:
-        pr0fess0r_99 = [[ InlineKeyboardButton("× 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ×", url=f"http://t.me/{temp.Bot_Username}?startgroup=true") ],
-                        [ InlineKeyboardButton("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 💬", url=f"t.me/{SUPPORT}"), InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="t.me/Mo_Tech_YT") ],
+        moviesclubowne = [[ InlineKeyboardButton("× 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ×", url=f"http://t.me/{temp.Bot_Username}?startgroup=true") ],
+                        [ InlineKeyboardButton("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 💬", url=f"t.me/{SUPPORT}"), InlineKeyboardButton("𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="t.me/Moviesclubs77") ],
                         [ InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿", callback_data="help"), InlineKeyboardButton("𝙰𝙱𝙾𝚄𝚃 🤠", callback_data="about") ]] 
         await bot.send_photo(photo=random.choice(PICS), chat_id=update.chat.id, caption=START_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(pr0fess0r_99))
 
@@ -222,7 +222,7 @@ async def setwelcome(client, message):
         return await sts.edit("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳..!", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴", callback_data="spellcheck") ]] ))
 
     pr0fess0r_99 = message.text.split(" ", 1)[1]
-    await save_group_settings(grp_id, 'welcometext', pr0fess0r_99)
+    await save_group_settings(grp_id, 'welcometext', moviesclubowne)
     await sts.edit(f"""𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙵𝙾𝚁 {title} 𝚃𝙾\n\n{pr0fess0r_99}""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]] ))
 
 
@@ -267,7 +267,7 @@ async def setspell(client, message):
         return await sts.edit("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳..!", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴", callback_data="welcome") ]] ))
 
     pr0fess0r_99 = message.text.split(" ", 1)[1]
-    await save_group_settings(grp_id, 'spelltext', pr0fess0r_99)
+    await save_group_settings(grp_id, 'spelltext', moviesclubowne)
     await sts.edit(f"""𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝚂𝙴𝚃 𝚂𝙿𝙴𝙻𝙻 𝙲𝙷𝙴𝙲𝙺 𝙵𝙾𝚁 {title} 𝚃𝙾\n\n{pr0fess0r_99}""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]] ))
 
 @lucifermoringstar_robot.on_message((filters.private | filters.group) & filters.command('setcaption'))
@@ -311,5 +311,5 @@ async def filecap(client, message):
         return await sts.edit("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳..!", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴", callback_data="filecaption") ]] ))
 
     pr0fess0r_99 = message.text.split(" ", 1)[1]
-    await save_group_settings(grp_id, 'caption', pr0fess0r_99)
+    await save_group_settings(grp_id, 'caption', moviesclubowne)
     await sts.edit(f"""𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙵𝙸𝙻𝙴 𝙲𝙰𝙿𝚃𝙸𝙾𝙽 𝙵𝙾𝚁 {title} 𝚃𝙾\n\n{pr0fess0r_99}""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]] ))
